@@ -1,0 +1,40 @@
+.header__wrapper{
+    position: relative;
+    //max-width: 1200px;
+    //margin: 0 auto;
+}
+.heder__container{
+    position: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 16px;
+@media screen and(min-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 24px;
+}
+@media screen and(min-width: 1200px) {
+    padding-top: 36px;
+}
+}
+.header__logo{
+    width: 108px;
+    height: 50px;
+@media screen and(min-width: 767px) {
+    width: 106px;
+    height: 46px;
+    }
+@media screen and(min-width: 1200px) {
+    width: 185px;
+    height: 70px;
+    
+    }
+}
+.header__nav{
+    width: 766px;
+    
+}

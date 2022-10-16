@@ -1,0 +1,53 @@
+.hero {
+    background-image: url(../images/glazed-donuts-in-boxes-copy-space.jpg);
+  
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    max-width: 1280px;
+    height: 556px;
+    //left: 1280px;
+    //top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 86px;
+    padding-bottom: 90px;
+}
+.hero__title{
+    margin-bottom: 18px;
+}
+.hero__subtitle{
+    margin-bottom: 28px;
+}
+.hero__btn{
+    margin-bottom: 28px;
+}
+/*tab*/
+@media screen and (min-width: 768px) {
+    .hero{
+        padding-top: 98px;
+    }
+    .hero__title{
+        margin-bottom: 10px;
+    }
+    .hero__subtitle{
+        margin-bottom: 24px;//только на tab
+    }    
+    .hero__btn{
+        margin-bottom: 20px;
+    }
+}
+/*desk*/
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 171px;
+    }
+    .hero__title{
+    margin-bottom: 20px;
+    }
+    .hero__subtitle{
+    margin-bottom: 33px;
+    }
+}

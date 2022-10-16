@@ -1,0 +1,217 @@
+@charset "UTF-8";
+body {
+  font-family: Montserrat, sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*убирает маркеры возле ненумер списков*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*h2*/
+.title-section {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--text-primary-color);
+}
+
+/*m+t*/
+@media screen and (max-width: 767px) {
+  .title-section {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+button {
+  /*font-family: inherit; принудительное унаследование от боди для кнопок*/
+  cursor: pointer;
+  /*курсор ладонь*/
+  display: block;
+  border: none;
+  background: var(--accent-color);
+  border-radius: 25px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  width: 145px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: #FFFFFF;
+  /* тень кнопки */
+  box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
+}
+
+.header__wrapper {
+  position: relative;
+}
+
+.heder__container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+@media screen and (min-width: 767px) {
+  .heder__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heder__container {
+    padding-top: 36px;
+  }
+}
+
+.header__logo {
+  width: 108px;
+  height: 50px;
+}
+@media screen and (min-width: 767px) {
+  .header__logo {
+    width: 106px;
+    height: 46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    width: 185px;
+    height: 70px;
+  }
+}
+
+.header__nav {
+  width: 766px;
+}
+
+.hero {
+  background-image: url(../images/glazed-donuts-in-boxes-copy-space.jpg);
+  background-color: #C4C4C4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1280px;
+  height: 556px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 86px;
+  padding-bottom: 90px;
+}
+
+.hero__title {
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  margin-bottom: 28px;
+}
+
+.hero__btn {
+  margin-bottom: 28px;
+}
+
+/*tab*/
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 98px;
+  }
+  .hero__title {
+    margin-bottom: 10px;
+  }
+  .hero__subtitle {
+    margin-bottom: 24px;
+  }
+  .hero__btn {
+    margin-bottom: 20px;
+  }
+}
+/*desk*/
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 171px;
+  }
+  .hero__title {
+    margin-bottom: 20px;
+  }
+  .hero__subtitle {
+    margin-bottom: 33px;
+  }
+}
+:root {
+  --text-primary-color: #3C322D;
+  --title-color:#2E2520;
+  --accent-color: #F3848C;
+  --white-color: #F6F7F7;
+  --bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}/*# sourceMappingURL=main.css.map */
